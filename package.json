@@ -60,11 +60,11 @@
     "format": "yarn prettier --write",
     "format:verify": "yarn prettier --list-different \"**/*.{js,json,md,ts,yml}\"",
     "format:write-all": "yarn format:verify --write",
-    "lint": "eslint \"./src/*.ts\" \"./src/**/*.ts\" --report-unused-disable-directives",
+    "lint": "eslint \"./src/*.ts*\" --report-unused-disable-directives",
     "prepare": "husky install",
     "test": "jest",
     "test:ci": "jest --maxWorkers=2"
   },
   "types": "src/index.d.ts",
-  "version": "0.4.0"
+  "version": "0.4.1"
 }
