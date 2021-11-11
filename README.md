@@ -8,7 +8,7 @@
 >
 > 🎉 ✨ 🎆
 
-React hook+component that that uses [konami-code-js](https://github.com/Haeresis/konami-code-js) to trigger [emojisplosion](https://github.com/JoshuaKGoldberg/emojisplosion).
+Hooks [konami-code-js](https://github.com/Haeresis/konami-code-js) to trigger [emojisplosion](https://github.com/JoshuaKGoldberg/emojisplosion).
 
 If a user types in the Konami Code on their keyboard or taps it on their mobile phone, emojisplosions will start firing on the page.
 Triggering the Konami Code again will stop the emojisplosions.
@@ -17,9 +17,17 @@ Triggering the Konami Code again will stop the emojisplosions.
 
 ## Usage
 
-You can import and use this either as a hook or class component.
+You can import and use this as a standalone function, a React hook, or a React class component.
 
-### Hook
+### Standalone Function
+
+```tsx
+import { initializeKonamimojisplosion } from 'konamimojisplosion';
+
+initializeKonamimojisplosion();
+```
+
+### React Hook
 
 ```tsx
 import { useKonamimojisplosion } from 'konamimojisplosion';
@@ -36,7 +44,7 @@ function MyComponent() {
 }
 ```
 
-### Class Component
+### React Class Component
 
 > Tip: the class component just calls the hook internally.
 
@@ -65,16 +73,16 @@ Requires:
 After [forking the repo from GitHub](https://help.github.com/articles/fork-a-repo):
 
 ```shell
-git clone https://github.com/<your-name-here>/mock-react-redux
-cd mock-react-redux
+git clone https://github.com/<your-name-here>/konamimojisplosion
+cd konamimojisplosion
 yarn
 ```
 
 ### Contribution Guidelines
 
 We'd love to have you contribute!
-Check the [issue tracker](https://github.com/Codecademy/mock-react-redux/issues) for issues labeled [`accepting prs`](https://github.com/Codecademy/mock-react-redux/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+label%3A%22accepting+prs%22) to find bug fixes and feature requests the community can work on.
-If this is your first time working with this code, the [`good first issue`](https://github.com/Codecademy/mock-react-redux/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+label%3A%22good+first+issue%22+) label indicates good introductory issues.
+Check the [issue tracker](https://github.com/Codecademy/konamimojisplosion/issues) for issues labeled [`accepting prs`](https://github.com/Codecademy/konamimojisplosion/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+label%3A%22accepting+prs%22) to find bug fixes and feature requests the community can work on.
+If this is your first time working with this code, the [`good first issue`](https://github.com/Codecademy/konamimojisplosion/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+label%3A%22good+first+issue%22+) label indicates good introductory issues.
 
 Please note that this project is released with a [Contributor Covenant](https://www.contributor-covenant.org).
 By participating in this project you agree to abide by its terms.
