@@ -1,0 +1,3 @@
+src/**/*.t*
+src/**/*.test.t*
+!src/**/*.d.ts

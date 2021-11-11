@@ -1,0 +1,70 @@
+{
+  "author": "Codecademy",
+  "dependencies": {
+    "emojisplosion": "^2.6.1",
+    "konami-code-js": "^0.8.1"
+  },
+  "description": "Mocks out Redux actions and selectors for clean React Jest tests.",
+  "devDependencies": {
+    "@babel/preset-env": "^7.16.0",
+    "@babel/preset-react": "^7.16.0",
+    "@babel/preset-typescript": "^7.16.0",
+    "@codecademy/prettier-config": "^0.2.0",
+    "@codecademy/tsconfig": "^0.3.0",
+    "@testing-library/react": "^12.1.2",
+    "@testing-library/react-hooks": "^7.0.2",
+    "@types/jest": "^27.0.2",
+    "@types/konami-code-js": "^0.8.1",
+    "@types/redux-mock-store": "^1.0.3",
+    "@types/testing-library__react": "^10.0.1",
+    "@typescript-eslint/eslint-plugin": "5.3.1",
+    "@typescript-eslint/parser": "^5.3.1",
+    "babel-jest": "^27.3.1",
+    "component-test-setup": "^0.3.2",
+    "eslint": "^8.2.0",
+    "eslint-config-prettier": "^8.3.0",
+    "husky": "^7.0.0",
+    "jest": "^27.3.1",
+    "jest-environment-jsdom": "^27.3.1",
+    "jest-environment-jsdom-global": "^3.0.0",
+    "lint-staged": "^11.2.6",
+    "prettier": "^2.4.1",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "typescript": "^4.4.4"
+  },
+  "main": "src/index.js",
+  "homepage": "https://github.com/Codecademy/konamimojisplosion#readme",
+  "keywords": [
+    "konami",
+    "konami code",
+    "emojisplosion",
+    "konamimojisplosion",
+    "easter egg",
+    "react",
+    "hooks"
+  ],
+  "license": "MIT",
+  "lint-staged": {
+    "**/*.{js,json,md,ts,tsx,xml,yml,yaml}": [
+      "prettier --write"
+    ]
+  },
+  "name": "konamimojisplosion",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Codecademy/konamimojisplosion.git"
+  },
+  "scripts": {
+    "compile": "tsc --module commonjs",
+    "format": "yarn prettier --write",
+    "format:verify": "yarn prettier --list-different \"**/*.{js,json,md,ts,yml}\"",
+    "format:write-all": "yarn format:verify --write",
+    "lint": "eslint \"./src/*.ts\" \"./src/**/*.ts\" --report-unused-disable-directives",
+    "prepare": "husky install",
+    "test": "jest",
+    "test:ci": "jest --maxWorkers=2"
+  },
+  "types": "src/index.d.ts",
+  "version": "0.4.0"
+}
