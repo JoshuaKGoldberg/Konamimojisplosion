@@ -1,7 +1,14 @@
 name: Push CI
 
 jobs:
-  ci:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: Codecademy/run-on-yarn@v1
+      - run: yarn compile
+      - run: yarn build
+
+  check:
     runs-on: ubuntu-latest
     steps:
       - uses: Codecademy/run-on-yarn@v1
@@ -10,6 +17,6 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-        command: ['compile', 'format:verify', 'lint', 'test:ci']
+        command: ['format:verify', 'lint', 'test:ci']
 
 on: push
