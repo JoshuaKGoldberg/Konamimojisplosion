@@ -4,7 +4,7 @@
     "emojisplosion": "^2.6.1",
     "konami-code-js": "^0.8.1"
   },
-  "description": "Mocks out Redux actions and selectors for clean React Jest tests.",
+  "description": "Connects konami-code-js to emojisplosion for a glorious easter egg.",
   "devDependencies": {
     "@babel/preset-env": "^7.16.0",
     "@babel/preset-react": "^7.16.0",
