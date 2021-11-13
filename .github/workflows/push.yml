@@ -10,6 +10,6 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-        command: ['compile', 'format:verify', 'lint', 'test:ci']
+        command: ['build', 'compile', 'format:verify', 'lint', 'test:ci']
 
 on: push
