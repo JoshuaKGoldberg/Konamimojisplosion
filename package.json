@@ -1,5 +1,5 @@
 {
-  "author": "Codecademy",
+  "author": "Josh Goldberg",
   "dependencies": {
     "emojisplosion": "^2.6.1",
     "konami-code-js": "^0.8.1"
@@ -9,8 +9,6 @@
     "@babel/preset-env": "^7.16.0",
     "@babel/preset-react": "^7.16.0",
     "@babel/preset-typescript": "^7.16.0",
-    "@codecademy/prettier-config": "^0.2.0",
-    "@codecademy/tsconfig": "^0.3.0",
     "@testing-library/react": "^12.1.2",
     "@testing-library/react-hooks": "^7.0.2",
     "@types/jest": "^27.0.2",
@@ -36,7 +34,7 @@
     "webpack-cli": "^4.9.1"
   },
   "main": "src/index.js",
-  "homepage": "https://github.com/Codecademy/konamimojisplosion#readme",
+  "homepage": "https://github.com/JoshuaKGoldberg/Konamimojisplosion#readme",
   "keywords": [
     "konami",
     "konami code",
@@ -55,7 +53,7 @@
   "name": "konamimojisplosion",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Codecademy/konamimojisplosion.git"
+    "url": "git+https://github.com/JoshuaKGoldberg/Konamimojisplosion.git"
   },
   "scripts": {
     "build": "webpack",

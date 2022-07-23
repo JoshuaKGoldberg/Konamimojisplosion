@@ -22,7 +22,7 @@ You can import and use this as a standalone function, a React hook, or a React c
 ### Standalone Function
 
 ```tsx
-import { initializeKonamimojisplosion } from 'konamimojisplosion';
+import { initializeKonamimojisplosion } from "konamimojisplosion";
 
 initializeKonamimojisplosion();
 ```
@@ -49,7 +49,7 @@ function MyComponent() {
 > Tip: the class component just calls the hook internally.
 
 ```tsx
-import { Konamimojisplosion } from 'konamimojisplosion';
+import { Konamimojisplosion } from "konamimojisplosion";
 
 class MyComponent {
   render() {

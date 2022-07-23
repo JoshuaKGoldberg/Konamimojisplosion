@@ -972,16 +972,6 @@
   resolved "https://registry.yarnpkg.com/@bcoe/v8-coverage/-/v8-coverage-0.2.3.tgz#75a2e8b51cb758a7553d6804a5932d7aace75c39"
   integrity sha512-0hYQ8SB4Db5zvZB4axdMHGwEaQjkZzFjQiN9LVYvIFB2nSUHW9tYpxWriPrWDASIxiaXax83REcLxuSdnGPZtw==
 
-"@codecademy/prettier-config@^0.2.0":
-  version "0.2.0"
-  resolved "https://registry.yarnpkg.com/@codecademy/prettier-config/-/prettier-config-0.2.0.tgz#15a13a04c08d21fac7c88c2983258c1bdaf8152f"
-  integrity sha512-WRaYl9urRIbT3D3UAehGXFi0lreG6VxwMQlJt39Ov/1amYjzQpM2V9Gm+FHQrHmIqff3H/fNxSNqy4ImrqFOjw==
-
-"@codecademy/tsconfig@^0.3.0":
-  version "0.3.0"
-  resolved "https://registry.yarnpkg.com/@codecademy/tsconfig/-/tsconfig-0.3.0.tgz#dc463a3e668bbf1ad3c3d13d9f8b825e8bc31442"
-  integrity sha512-NbSXNdZaGvo+t4GW/ucCKNgAyYY5GMxKgsbYanek7tqbQgdX3hwAsbPkd1G5QR82+ARfsjNfWi7Yss4WTSybrA==
-
 "@discoveryjs/json-ext@^0.5.0":
   version "0.5.5"
   resolved "https://registry.yarnpkg.com/@discoveryjs/json-ext/-/json-ext-0.5.5.tgz#9283c9ce5b289a3c4f61c12757469e59377f81f3"

@@ -1,3 +1,3 @@
-import { initializeKonamimojisplosion } from './initializeKonamimojisplosion';
+import { initializeKonamimojisplosion } from "./initializeKonamimojisplosion";
 
 initializeKonamimojisplosion();

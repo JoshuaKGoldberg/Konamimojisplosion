@@ -17,6 +17,6 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-        command: ['format:verify', 'lint', 'test:ci']
+        command: ["format:verify", "lint", "test:ci"]
 
 on: push

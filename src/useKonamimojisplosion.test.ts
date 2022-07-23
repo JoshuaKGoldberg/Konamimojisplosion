@@ -1,11 +1,11 @@
-import { act, renderHook } from '@testing-library/react-hooks';
+import { act, renderHook } from "@testing-library/react-hooks";
 
-import { useKonamimojisplosion } from './useKonamimojisplosion';
+import { useKonamimojisplosion } from "./useKonamimojisplosion";
 
 let mockKonamiCode: { mockLaunch: () => void; disable: jest.Mock };
 
 jest.mock(
-  'konami-code-js',
+  "konami-code-js",
   () =>
     class MockKonamiCode {
       constructor(public mockLaunch: () => void) {
@@ -21,20 +21,20 @@ const mockEmojisplosionsStart = jest.fn(() => ({
   cancel: mockEmojisplosionsCancel,
 }));
 
-jest.mock('emojisplosion', () => ({
+jest.mock("emojisplosion", () => ({
   get emojisplosions() {
     return mockEmojisplosionsStart;
   },
 }));
 
-describe('useKonamimojisplosion', () => {
-  it('does not start emojisplosions when the konami code is not triggered', () => {
+describe("useKonamimojisplosion", () => {
+  it("does not start emojisplosions when the konami code is not triggered", () => {
     renderHook(() => useKonamimojisplosion(jest.fn()));
 
     expect(mockEmojisplosionsStart).not.toHaveBeenCalled();
   });
 
-  it('starts emojisplosions when the konami code is triggered a first time', () => {
+  it("starts emojisplosions when the konami code is triggered a first time", () => {
     renderHook(() => useKonamimojisplosion(jest.fn()));
 
     act(() => {
@@ -44,7 +44,7 @@ describe('useKonamimojisplosion', () => {
     expect(mockEmojisplosionsStart).toHaveBeenCalled();
   });
 
-  it('stops emojisplosions when the konami code is triggered a second time', () => {
+  it("stops emojisplosions when the konami code is triggered a second time", () => {
     renderHook(() => useKonamimojisplosion(jest.fn()));
 
     act(() => {
@@ -58,7 +58,7 @@ describe('useKonamimojisplosion', () => {
     expect(mockEmojisplosionsCancel).toHaveBeenCalled();
   });
 
-  it('stops emojisplosions and konami listening when disposed', () => {
+  it("stops emojisplosions and konami listening when disposed", () => {
     const hook = renderHook(() => useKonamimojisplosion(jest.fn()));
 
     act(() => {

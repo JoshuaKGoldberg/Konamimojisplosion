@@ -1,5 +1,5 @@
-import { emojisplosions, EmojisplosionsHandler } from 'emojisplosion';
-import KonamiCode from 'konami-code-js';
+import { emojisplosions, EmojisplosionsHandler } from "emojisplosion";
+import KonamiCode from "konami-code-js";
 
 export const initializeKonamimojisplosion = (onActivate?: () => void) => {
   let explosions: EmojisplosionsHandler | undefined;

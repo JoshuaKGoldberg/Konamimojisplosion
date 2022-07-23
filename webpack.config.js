@@ -1,17 +1,17 @@
-const webpack = require('webpack');
-const path = require('path');
+const webpack = require("webpack");
+const path = require("path");
 
 const notice = `
-See https://github.com/Codecademy/konamimojisplosion for documentation.
+See https://github.com/JoshuaKGoldberg/Konamimojisplosion for documentation.
 MIT licensed.
 `.trim();
 
 module.exports = {
-  entry: './src/global.ts',
-  mode: 'production',
+  entry: "./src/global.ts",
+  mode: "production",
   output: {
-    filename: 'global.js',
-    path: path.resolve(__dirname, 'dist'),
+    filename: "global.js",
+    path: path.resolve(__dirname, "dist"),
   },
   plugins: [new webpack.BannerPlugin(notice)],
 };
