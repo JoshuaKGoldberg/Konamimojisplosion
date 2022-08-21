@@ -17,7 +17,16 @@ Triggering the Konami Code again will stop the emojisplosions.
 
 ## Usage
 
-You can import and use this as a standalone function, a React hook, or a React class component.
+### Quick Mode
+
+Plop this 👇 at the end of your `<body>`:
+
+<!-- prettier-ignore -->
+```html
+<script async src="https://unpkg.com/konamimojisplosion/dist/global.js"></script>
+```
+
+Alternately, you can import and use this as a standalone function, a React hook, or a React class component.
 
 ### Standalone Function
 
@@ -30,17 +39,12 @@ initializeKonamimojisplosion();
 ### React Hook
 
 ```tsx
-import { useKonamimojisplosion } from 'konamimojisplosion';
+import { useKonamimojisplosion } from "konamimojisplosion";
 
 function MyComponent() {
-    useKonamimojisplosion();
+  useKonamimojisplosion();
 
-    return (
-      <main>
-        Hello, world!
-      </main>
-    );
-  }
+  return <main>Hello, world!</main>;
 }
 ```
 
