@@ -67,5 +67,5 @@
     "test:ci": "jest --maxWorkers=2"
   },
   "types": "src/index.d.ts",
-  "version": "0.5.1"
+  "version": "0.5.2"
 }
